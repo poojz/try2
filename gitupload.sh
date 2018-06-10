@@ -20,7 +20,7 @@ case $answer_dirname in
   *)
     ;;
 esac
-
+echo $reponame
 
 # create repo
 echo "Creating Github repository '$reponame' ..."
@@ -48,7 +48,7 @@ read -p "Do you want to open the new repo page in browser?(y/n): " answer_browse
 case $answer_browser in
   y)
     echo "Opening in a browser ..."
-    open https://github.com/poojz/$reponame
+    open https://github.com/poojz/sample
     ;;
   n)
     ;;
