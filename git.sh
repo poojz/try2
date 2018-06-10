@@ -24,7 +24,7 @@ esac
 
 
 echo "Creating Github repository '$reponame' ..."
-curl -u poojz https://api.github.com/user/repos -d '{"name":"'$reponame'"}'
+curl -u $username https://api.github.com/user/repos -d '{"name":"$reponame"}'
 echo " done."
 touch README.md
 echo " done."
